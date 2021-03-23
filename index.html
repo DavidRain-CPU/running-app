@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+<body>
+  <h1>Running Tracker</h1>
+
+  <select id="BGcolor" onchange="changeBG()">
+  <option value="red">Red</option>
+  <option value="yellow">Yellow</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="orange">Orange</option>
+  <option value="black">Black</option>
+  <option value="silver">Silver</option>
+  <option value="gold">Gold</option>
+  <option value="magenta">Magenta</option>
+  <option value="pink">Pink</option>
+  <option value="cyan">Cyan</option>
+  <option value="violet">Violet</option>
+  <option value="purple">Purple</option>
+  <option value="powderblue">Powder blue</option>
+  <option value="maroon">Maroon</option>
+  <option value="darkblue">Dark blue</option>
+</select>
+
+  <!-- NEW CODE BELOW HERE -->
+
+  <form>
+    <label for="entry">Number of miles today</label>
+    <br>
+    <input type="number" id="entry" step="0.1">
+    <br>
+    <button type="submit">Add</button>
+  </form>
+
+  <hr />
+
+  <section class="entriesWrapper">
+    <h3>Last 7 days</h3>
+    <ul id="entries">
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+    </ul>
+  </section>
+
+  <section class="data">
+    <div>
+      <p>Total:</p>
+      <span id="total">0</span>
+    </div>
+
+    <div>
+      <p>Average Distance</p>
+      <span id="average">0</span>
+    </div>
+
+    <div>
+      <p>This weeks high</p>
+      <span id="high">0</span>
+    </div>
+  </section>
+
+  <section class="progress">
+    <h3>Weekly Target:
+      <span id="progressTotal">0</span>/
+      <span id="target">25</span> miles
+    </h3>
+  </section>
+
+</body>
+
+</html>
